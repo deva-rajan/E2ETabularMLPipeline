@@ -1,4 +1,4 @@
-# Pipeline sample_pipeline
+# Pipeline predict_explain
 
 > *Note:* This is a `README.md` boilerplate generated using `Kedro 0.18.4`.
 
