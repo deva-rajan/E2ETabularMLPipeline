@@ -25,8 +25,8 @@ def register_pipelines() -> Dict[str, Pipeline]:
     # pipelines = find_pipelines()
     # pipelines["__default__"] = sum(pipelines.values())
     pipelines = {"data_processing": data_processing_pipeline,
-                 "feature_engineering_pipeline": feature_engineering_pipeline,
-                 "model_train_pipeline": model_train_pipeline, "predict_explain_pipeline": predict_explain_pipeline}
+                 "feature_engineering": feature_engineering_pipeline,
+                 "model_train": model_train_pipeline, "predict_explain_pipeline": predict_explain_pipeline}
     pipelines["__default__"] = sum(pipelines.values())
 
     return pipelines

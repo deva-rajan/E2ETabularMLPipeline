@@ -1,0 +1,15 @@
+
+engine: 'pandas'
+data:
+  auto_feateng:
+    idcols : ['id_x','id_y','company_id','shuttle_id']
+    target : ['company_rating']
+
+feature_engineering:
+  encoding:
+    method: 'onehot'
+  scaling:
+    method : 'standard'
+  multicollinearity:
+    method : 'vif'
+    threshold : 10

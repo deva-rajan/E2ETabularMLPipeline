@@ -2,3 +2,23 @@
 #
 # Documentation for this file format can be found in "The Data Catalog"
 # Link: https://kedro.readthedocs.io/en/stable/data/data_catalog.html
+
+companies:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/companies.csv
+
+reviews:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/reviews.csv
+
+shuttles:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/shuttles.csv
+
+auto_feateng:
+  type: pandas.CSVDataSet
+  filepath: data/04_feature/auto_feateng.csv
+
+model_input_data:
+  type: pandas.CSVDataSet
+  filepath: data/05_model_input/model_input_data.csv

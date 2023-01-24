@@ -7,12 +7,13 @@ from abc import ABC, abstractmethod
 import logging
 import time
 
+
 class BaseClass(ABC):
 
     def setup(self):
-        self.logger = logging.getLogger(self.__name__)
+        self.logger = logging.getLogger(BaseClass.__name__)
         self.start_time = time.time()
-        pass
+        self.end_time = None
 
     @abstractmethod
     def core(self):
